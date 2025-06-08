@@ -54,3 +54,64 @@ npm install react-beautiful-dnd
 
 # Icons
 npm install react-icons
+
+⚠️ If you're using Tailwind for the first time, update tailwind.config.js with paths to your source files:
+
+**content: ["./src/**/*.{js,jsx,ts,tsx}"],**
+
+**---Also, configure index.css or App.css:**
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Testing & Validation Guide
+Here’s how to validate all key components and features:
+
+**✅ General UI**
+Launch the app with npm start.
+
+Check that the Dashboard loads with 3 top summary cards and 4 feature cards.
+
+Test both light and dark modes with persistent toggle.
+
+**✅ Navigation**
+Click each card (Calendar, Kanban, Table, Charts) to verify routing.
+
+Topbar and Sidebar should highlight active routes.
+
+**✅ Calendar**
+Click on a date → Modal should open.
+
+Create event → Event should appear on the calendar.
+
+Click event → Option to delete should show.
+
+**✅ Kanban Board**
+Tasks should be grouped into columns: To Do, In Progress, Done.
+
+On hovering over a task, a Shift icon should appear.
+
+Click Shift → Select a column → Task should move.
+
+Add/Edit/Delete task should work via modal.
+
+**✅ Table**
+Should show dynamic data with the following:
+
+Sorting by columns
+
+Searching (one global search bar)
+
+Pagination
+
+Filtering columns
+
+CRUD operations
+
+**✅ Charts**
+Line chart, bar chart, and pie chart should render mock booking data (e.g., revenue, hits/flops, genres).
+
+
