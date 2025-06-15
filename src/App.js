@@ -9,6 +9,8 @@ import CalendarPage from './pages/CalendarPage';
 import KanbanPage from './pages/KanbanPage';
 import TablePage from './pages/TablePage';
 import ChartsPage from './pages/ChartsPage';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
@@ -28,7 +30,8 @@ function App() {
               <Route path="/table" element={<TablePage />} />
               <Route path="/charts" element={<ChartsPage />} />
               <Route path="/charts/:chartType" element={<ChartsPage />} />
-
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
             </Routes>
           </main>
         </div>

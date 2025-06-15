@@ -61,14 +61,14 @@ const Topbar = () => {
             </NavLink>
 
 
-        {/* <NavLink
-          to="/settings"
+        <NavLink
+          to="/login"
           className={({ isActive }) =>
             `${navLinkStyle} ${isActive ? activeStyle : 'text-gray-700 dark:text-gray-300'}`
           }
         >
-          Settings
-        </NavLink> */}
+          Login/SignUp
+        </NavLink>
 
         {/* Theme Toggle */}
         <button
